@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :trackable, :validatable, :registerable
          #:rememberable, #:recoverable,
 
-  has_many :owned_projects, foreign_key: :xd_owner_id, class_name: 'Project'
+  has_many :owned_projects, foreign_key: :xd_owner_id, class_name: 'Opportunities'
 
   def self.clearance_name clearance
     case clearance
