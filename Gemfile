@@ -16,6 +16,7 @@ gem 'awesome_print'
 gem 'haml'
 gem 'devise'
 gem 'paper_trail', '~> 3.0.1'
+gem 'thin'
 
 #
 # APP UTILITIES
@@ -24,6 +25,15 @@ gem 'rack-cors'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # gem 'bullet'
+  gem 'thin'
+  gem 'rails-erd' # brew install graphviz 
+  # gem 'rack-mini-profiler'
 end
 
 # Use ActiveModel has_secure_password
