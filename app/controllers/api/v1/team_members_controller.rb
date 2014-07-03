@@ -12,6 +12,7 @@ module Api
       end
 
       def create
+# binding.pry
         respond_with TeamMember.create(team_member_params)
       end
 
@@ -31,7 +32,7 @@ module Api
       end
 
       def team_member_params
-        params.require(:team_member).permit(:name, :practice_id)
+        params.require(:team_member).permit(:name)
       end
     end
   end

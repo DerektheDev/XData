@@ -16,8 +16,6 @@ gem 'awesome_print'
 gem 'haml'
 gem 'devise'
 gem 'paper_trail', '~> 3.0.1'
-gem 'thin'
-
 #
 # APP UTILITIES
 gem 'rack-cors'
@@ -33,6 +31,8 @@ group :development do
   # gem 'bullet'
   gem 'thin'
   gem 'rails-erd' # brew install graphviz 
+  gem 'pry'
+  gem 'pry-byebug'
   # gem 'rack-mini-profiler'
 end
 
